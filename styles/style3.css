@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.header{
+    min-height: 150vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.76)),url(../images/backgrounds/image5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    padding: 0.5% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-bottom: rgba(255, 255, 255, 0.76);
+    border-bottom-style: solid;
+    position: sticky; top: 0;
+    z-index: 1;
+    animation: slidebottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+nav img{
+    width: 300px;
+    animation: fadein 2s;
+}
+.navigation-link{
+    flex: 1;
+    text-align: right;
+}
+.navigation-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+@keyframes slidebottom{
+    0% {
+      transform: translateY(-200px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+} 
+@keyframes fadein{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.navigation-link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    animation: fadein 2s;
+}
+.navigation-link ul li a:hover{
+    text-shadow:
+    0 0 7px #026928,
+    0 0 10px #026928,
+    0 0 21px #026928,
+    0 0 42px #026928,
+    0 0 82px #026928,
+    0 0 92px #026928,
+    0 0 102px #026928,
+    0 0 151px #026928;
+}
+.current{
+    text-shadow:
+    0 0 7px #026928,
+    0 0 10px #026928,
+    0 0 21px #026928,
+    0 0 42px #026928,
+    0 0 82px #026928,
+    0 0 92px #026928,
+    0 0 102px #026928,
+    0 0 151px #026928;
+}
+#maintext{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#maintext h1{
+    font-size: 50px;
+}
+#maintext h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#maintext #heading{
+    margin-bottom: 30px;
+}
+#maintext #oceanwise, #maintext #oceanconservancy{
+    border-radius: 3px;
+    font-size: 20px;
+    background: rgb(166, 252, 233);
+    cursor: pointer;
+    border: 2px solid #00c3ff;
+    padding: 10px 20px;
+    color:rgb(0, 0, 0);
+    animation: fadein 2s;
+    transition: all 0.2s ease-in-out;
+    margin-left: 20px;
+}
+#maintext #oceanwise:hover, #maintext #oceanconservancy:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgb(0, 225, 255);
+}
+#maintext #treesforthefuture, #maintext #arbordayfoundation{
+    border-radius: 3px;
+    font-size: 20px;
+    background: rgb(123, 248, 112);
+    cursor: pointer;
+    border: 2px solid #049e04;
+    padding: 10px 20px;
+    color:rgb(0, 0, 0);
+    animation: fadein 2s;
+    transition: all 0.2s ease-in-out;
+    margin-left: 20px;
+}
+#maintext #treesforthefuture:hover, #maintext #arbordayfoundation:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgb(0, 102, 34);
+}
+.footer{
+    width: auto;
+    padding: 20px 15%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.footer a{
+    color: rgb(255, 255, 255);
+}
+.footer div{
+    text-align: center;
+}
+#glowfooter{
+    text-shadow:
+    0 0 7px #FF0000,
+    0 0 10px #FF0000,
+    0 0 21px #FF0000,
+    0 0 42px #FF0000,
+    0 0 82px #FF0000,
+    0 0 92px #FF0000,
+    0 0 102px #FF0000,
+    0 0 151px #FF0000;
+}
+#oceanwisesection{
+    animation: fadein 2s;
+    visibility: hidden;
+    display: none;
+}
+#oceanwisesection h1{
+    margin-top: 50px;
+}
+#oceanwisesection #openoceanwise{
+    color: white;
+    font-size: 30px;
+    text-shadow:
+    0 0 7px #00c3ff,
+    0 0 10px #00c3ff,
+    0 0 21px #00c3ff,
+    0 0 42px #00c3ff,
+    0 0 82px #00c3ff,
+    0 0 92px #00c3ff,
+    0 0 102px #00c3ff,
+    0 0 151px #00c3ff;
+}
+#oceanwisesection #openoceanwise:hover{
+    cursor: pointer;
+    color: #00c3ff;
+}
+#oceanconservancysection{
+    animation: fadein 2s;
+    visibility: hidden;
+    display: none;
+}
+#oceanconservancysection h1{
+    margin-top: 50px;
+}
+#oceanconservancysection #openoceanconservancy{
+    color: white;
+    font-size: 30px;
+    text-shadow:
+    0 0 7px #00c3ff,
+    0 0 10px #00c3ff,
+    0 0 21px #00c3ff,
+    0 0 42px #00c3ff,
+    0 0 82px #00c3ff,
+    0 0 92px #00c3ff,
+    0 0 102px #00c3ff,
+    0 0 151px #00c3ff;
+}
+#oceanconservancysection #openoceanconservancy:hover{
+    cursor: pointer;
+    color: #049e04;
+}
+#treesforthefuturesection{
+    animation: fadein 2s;
+    visibility: hidden;
+    display: none;
+}
+#treesforthefuturesection h1{
+    margin-top: 50px;
+}
+#treesforthefuturesection #opentreesforthefuture{
+    color: white;
+    font-size: 30px;
+    text-shadow:
+    0 0 7px #049e04,
+    0 0 10px #049e04,
+    0 0 21px #049e04,
+    0 0 42px #049e04,
+    0 0 82px #049e04,
+    0 0 92px #049e04,
+    0 0 102px #049e04,
+    0 0 151px #049e04;
+}
+#treesforthefuturesection #opentreesforthefuture:hover{
+    cursor: pointer;
+    color: #00e400;
+}
+
+#arbordayfoundationsection{
+    animation: fadein 2s;
+    visibility: hidden;
+    display: none;
+}
+#arbordayfoundationsection h1{
+    margin-top: 50px;
+}
+#arbordayfoundationsection #openarbordayfoundation{
+    color: white;
+    font-size: 30px;
+    text-shadow:
+    0 0 7px #049e04,
+    0 0 10px #049e04,
+    0 0 21px #049e04,
+    0 0 42px #049e04,
+    0 0 82px #049e04,
+    0 0 92px #049e04,
+    0 0 102px #049e04,
+    0 0 151px #049e04;
+}
+#arbordayfoundationsection #openarbordayfoundation:hover{
+    cursor: pointer;
+    color: #00e400;
+}
